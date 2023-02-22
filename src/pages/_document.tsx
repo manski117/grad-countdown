@@ -1,0 +1,19 @@
+import Document, {Html, Head, Main, NextScript} from 'next/document';
+
+//this actually NEEDS to be a class component bc we need to extend our Document to enable nextjs to use methods we need. 
+export default class CustomDocument extends Document {
+    render(): JSX.Element {
+        return <Html>
+            <Head>
+                <meta property='custom' content='lol' />
+            </Head>
+
+            <body>
+                <Main/>
+            </body>
+
+            <NextScript/>
+
+        </Html>
+    }
+}
