@@ -6,8 +6,18 @@
     @font-face{
     font-family: 'Calculator';
     src: url('../fonts/Calculator.ttf');
-    font-weight: bold;
-}
+    font-weight: 1000;
+    }
+    @font-face{
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-VariableFont_wght.ttf');
+    font-weight: 600;
+    }
+    @font-face{
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+    font-weight: 600;
+    }
 }
 
 body{
@@ -19,4 +29,56 @@ body{
     /* @apply w-screen; */
     @apply h-full;
 }
+
+.__counter-square{
+
+    min-width: 200px;
+}
+
+.__num-display{
+    min-width: 100px;
+    height: 70px;
+    text-shadow: 0 0 8px rgb(255, 146, 146);
+}
+
+.__timeType{
+    font-size: 2rem;
+}
+
+.__container{
+    gap: 15%;
+}
+
+h1{
+    text-shadow: 0 0 8px rgb(255, 146, 146);
+
+}
+
+
+
+
+@media (max-width: 640px) {
+    .__num-display {
+      font-size: 2rem;
+      min-width: 80px;
+    }
+
+    .__counter-square{
+        min-width: 60px;
+    }
+
+    .__timer{
+        gap: 5px;
+    }
+
+    .__timeType{
+        font-size: 12px;
+    }
+
+    h1{
+        text-align: center;
+        margin: 10px;
+        font-size: 36px
+    }
+  }
 

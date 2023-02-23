@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'calc': ['Calculator', 'sans-serif']
+        'calc': ['Calculator', 'sans-serif'],
+        'orb': ['Orbitron', 'sans-serif'],
+        'osw': ['Oswald', 'sans-serif']
       }
     },
   },

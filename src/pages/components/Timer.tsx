@@ -1,4 +1,5 @@
 import React from "react";
+import TimerElement from "./TimerElement";
 
 //types
 interface time {
@@ -58,12 +59,12 @@ export default function Timer(){
     
 
     return(
-        <div className="flex justify-center items-center">
-            <h2 className="font-calc">{timeRemaining.days}</h2>
-            <h2 className="font-calc">{timeRemaining.hours}</h2>
-            <h2 className="font-calc">{timeRemaining.minutes}</h2>
-            <h2 className="font-calc">{timeRemaining.seconds}</h2>
-            
+        <div className="__timer flex gap-10 justify-center items-center border-solid border-blue border">
+            <TimerElement time={timeRemaining.days} timeType='DAYS' />
+            <TimerElement time={timeRemaining.hours} timeType='HOURS' />
+            <TimerElement time={timeRemaining.minutes} timeType='MINUTES' />
+            <TimerElement time={timeRemaining.seconds} timeType='SECONDS' />
+
         </div>
     )
 }
