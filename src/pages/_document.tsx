@@ -17,3 +17,5 @@ export default class CustomDocument extends Document {
         </Html>
     }
 }
+
+//this will be available on EVERY page, even ones that 404
