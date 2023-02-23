@@ -1,11 +1,20 @@
 import { type NextPage } from "next";
+//import components
 import Head from "next/head";
 import Link from "next/link";
+import Container from "./components/Container";
+//import functions
 import sup from "./api/random-number";
+
 
 const Home: NextPage = () => {
   return (
-    <h1 onClick={sup}>say wuzzup</h1>
+    
+      <main className="w-full h-full">
+        <Container />
+      </main>
+
+    
   );
 };
 

@@ -10,6 +10,7 @@ export default class CustomDocument extends Document {
 
             <body>
                 <Main/>
+
             </body>
 
             <NextScript/>
