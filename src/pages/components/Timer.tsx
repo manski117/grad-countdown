@@ -1,5 +1,7 @@
-import React from "react";
+import { proseWrap } from "prettier.config.cjs";
+import React, { useEffect } from "react";
 import TimerElement from "./TimerElement";
+
 
 //types
 interface time {
@@ -9,7 +11,7 @@ interface time {
     seconds: number;
   };
 
-export default function Timer(){
+export default function Timer({onTimeout}: any){
     const [timeRemaining, setTimeRemaining] = React.useState<time>({
         days: 0,
         hours: 0,
@@ -18,8 +20,9 @@ export default function Timer(){
       });
 
     // Set the date we're counting down to
-    const countDownDate: number = new Date('Feb 23, 2023 20:12:25').getTime();
+    const countDownDate: number = new Date('Feb 24, 2023 00:34:25').getTime();
 
+    useEffect(() => {
     // Update the count down every 1 second
     let interval: any = setInterval(function () {
         // Get today's date and time
@@ -43,8 +46,11 @@ export default function Timer(){
         if (deltaT < 0) {
             clearInterval(interval);
             //TODO: make a fun effect happen here!
+            onTimeout();
+            console.log('timeout code successfully ran');
         }
     }, 1000);
+    },[]);
 
     function updateCountdownState(days: number, hours: number, minutes: number, seconds: number){
         setTimeRemaining({
@@ -59,11 +65,13 @@ export default function Timer(){
     
 
     return(
+        
         <div className="__timer flex gap-10 justify-center items-center border-solid border-blue border">
             <TimerElement time={timeRemaining.days} timeType='DAYS' />
             <TimerElement time={timeRemaining.hours} timeType='HOURS' />
             <TimerElement time={timeRemaining.minutes} timeType='MINUTES' />
             <TimerElement time={timeRemaining.seconds} timeType='SECONDS' />
+            
 
         </div>
     )
