@@ -1,10 +1,13 @@
 import { type NextPage } from "next";
 import React from "react";
 import { createContext } from "react";
+
+
 //import components
 import Head from "next/head";
 import Link from "next/link";
 import Container from "./components/Container";
+import Hooray from "./components/Hooray";
 //import functions
 import sup from "./api/random-number";
 
@@ -26,11 +29,14 @@ const Home: NextPage = () => {
     </div>
   )
 
+  let happy = '__happy w-full h-full';
+  let sad = '__sad w-full h-full';
+
   return (
     
-      <main className="w-full h-full">
+      <main className={gradStatus ? happy : sad}>
           {gradStatus ? fireworks : null}
-          <Container onGraduation={graduate} />
+          {gradStatus ? <Hooray /> : <Container onGraduation={graduate} />}
         
       </main>
 

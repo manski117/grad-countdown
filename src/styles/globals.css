@@ -9,6 +9,11 @@
     font-weight: 1000;
     }
     @font-face{
+    font-family: 'Courgette';
+    src: url('../fonts/Courgette-Regular.ttf');
+    font-weight: 1000;
+    }
+    @font-face{
     font-family: 'Orbitron';
     src: url('../fonts/Orbitron-VariableFont_wght.ttf');
     font-weight: 600;
@@ -16,6 +21,11 @@
     @font-face{
     font-family: 'Oswald';
     src: url('../fonts/Oswald-VariableFont_wght.ttf');
+    font-weight: 600;
+    }
+    @font-face{
+    font-family: 'Lalezar';
+    src: url('../fonts/Lalezar-Regular.ttf');
     font-weight: 600;
     }
 }
@@ -38,6 +48,7 @@ body{
 .__num-display{
     min-width: 100px;
     text-shadow: 0 0 8px rgb(255, 146, 146);
+    border-radius: 5px;
 }
 
 .__timeType{
@@ -48,9 +59,9 @@ body{
     gap: 15%;
 }
 
-h1{
-    text-shadow: 0 0 8px rgb(255, 146, 146);
 
+h1{
+    text-shadow: 0 0 5px rgb(255, 146, 146);
 }
 
 @media (max-width: 940px) {
@@ -59,6 +70,7 @@ h1{
       min-width: 80px;
       height: 90px;
       padding-top: 10px;
+      
       
     }
 
@@ -74,6 +86,12 @@ h1{
         font-size: 24px;
     }
 
+    h1{
+        text-align: center;
+        margin: 10px;
+        font-size: 36px;
+    }
+
 
   }
 
@@ -84,6 +102,7 @@ h1{
       min-width: 80px;
       height: 60px;
       padding-top: 3px;
+      
       
     }
 
@@ -107,8 +126,8 @@ h1{
   }
 
 
-main {
-    background: linear-gradient(282deg, #7b3636, #bb79d9, #dd7026, #263add, #d71818, #a50b0b, #7b3636);
+.__happy{
+    background: linear-gradient(282deg, #c044f5, #bb79d9, #2675dd, #22935b, #d68710, #5b0b94, #c044f5);
     background-size: 1200% 1200%;
 
     -webkit-animation: AnimationGradient 20s ease infinite;
@@ -132,8 +151,15 @@ main {
     100%{background-position:20% 0%}
 }
 
+.__sad{
+    background:linear-gradient( to bottom, #4f4f4f, #7c7c7c, #cacaca, #787878, #4f4f4f);
+}
 
-
+/* 	background:conic-gradient(#d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+								#d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+								#d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+								#d7d7d7, #c3c3c3, #cccccc, #c6c6c6);
+ */
 
 
 

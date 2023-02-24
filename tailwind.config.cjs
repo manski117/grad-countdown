@@ -6,7 +6,9 @@ module.exports = {
       fontFamily: {
         'calc': ['Calculator', 'sans-serif'],
         'orb': ['Orbitron', 'sans-serif'],
-        'osw': ['Oswald', 'sans-serif']
+        'osw': ['Oswald', 'sans-serif'],
+        'lal': ['Lalezar', 'sans-serif'],
+        'cor': ['Courgette', 'sans-serif']
       }
     },
   },

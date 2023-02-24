@@ -20,7 +20,7 @@ export default function Timer({onTimeout}: any){
       });
 
     // Set the date we're counting down to
-    const countDownDate: number = new Date('Feb 24, 2023 00:34:25').getTime();
+    const countDownDate: number = new Date('June 31, 2024 17:00:00').getTime();
 
     useEffect(() => {
     // Update the count down every 1 second
@@ -66,7 +66,7 @@ export default function Timer({onTimeout}: any){
 
     return(
         
-        <div className="__timer flex gap-10 justify-center items-center border-solid border-blue border">
+        <div className="__timer flex gap-10 justify-center items-center">
             <TimerElement time={timeRemaining.days} timeType='DAYS' />
             <TimerElement time={timeRemaining.hours} timeType='HOURS' />
             <TimerElement time={timeRemaining.minutes} timeType='MINUTES' />
