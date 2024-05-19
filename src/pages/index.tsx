@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
   function graduate(){
     setGradStatus(true);
-    alert('props passed to index yey');
+    // alert('props passed to index yey');
   }
 
   let fireworks: JSX.Element = (
