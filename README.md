@@ -1,3 +1,6 @@
+# Grad Countdown
+A simple graduation countdown webapp I made for fun as a gift for my friend who was in her last year of med school. Also a way to practice developing an app using the T3 stack that I had heard so much about. While the original date was hard-coded, you can easily change the date manually and the program should still work. Follow the Create T3 App steps below to create your own.
+
 # Create T3 App
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
